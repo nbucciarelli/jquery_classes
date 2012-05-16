@@ -1,0 +1,107 @@
+.bgimage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100; }
+
+.navbar-top {
+  width: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  opacity: 0.8; }
+
+.navbar-top ul {
+  margin: 0 !important; }
+
+.navlist-top > li {
+  float: right;
+  padding: 10px 25px 10px 25px; }
+  .navlist-top > li a {
+    color: inherit !important !important; }
+
+.logobar-inner {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+  background: none !important;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.logobar-logo {
+  text-align: right;
+  margin: 0;
+  background: inherit !important; }
+
+.logobar h1 {
+  padding: 30px;
+  font-family: "Montez", cursive;
+  font-size: 64px;
+  color: white;
+  text-shadow: 0 1px 0 #0d5574;
+  font-style: italic; }
+
+.main-content {
+  margin: 0;
+  width: 100%;
+  background: url(../../images/white-opacity70.png); }
+
+.navbar-inner {
+  background: inherit; }
+  .navbar-inner li.active > a {
+    background: inherit;
+    color: inherit; }
+  .navbar-inner li > a {
+    color: inherit;
+    text-shadow: inherit; }
+
+.section {
+  padding: 20px;
+  background: #60c2ed; }
+
+.section2 {
+  padding: 20px;
+  background: #fcf1e0; }
+
+.section3 {
+  padding: 20px;
+  background: #c65e59; }
+
+.section-header, .section2-header, .section3-header {
+  text-align: center; }
+
+.section-header h3 {
+  color: white;
+  border-bottom: 1px solid white; }
+
+.section2-header h3 {
+  color: #333333;
+  border-bottom: 1px solid #333333; }
+
+.section3-header h3 {
+  color: white;
+  border-bottom: 1px solid white; }
+
+.section-header h3, .section2-header h3, .section3-header h3 {
+  padding: 10px 0px;
+  margin-bottom: 15px;
+  font-family: "Montez", cursive;
+  font-size: 30px; }
+
+.section-column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f5f5f5; }
+
+.section2-column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #3f3f3f; }
+
+.section3-column {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #f5f5f5; }
+
+.clear {
+  clear: both; }

@@ -1,66 +1,113 @@
-A)
-  - Load jQuery from Google
-  - Create a new javascript file called "application.js" inside the javascripts folder
-  - Load that file in your HTML header below your jQuery load
+You can use console.log to log out the answers.
 
-B)
-  - Select the entire seating chart
-    Result: jQuery(div#seating_chart)
+=============================================================
+Selectors
+  A)
+    - Load jQuery from Google
+    - Create a new javascript file called "application.js" inside the javascripts folder
+    - Load that file in your HTML header below your jQuery load
 
-C)
-  - Select the entire Economy Class by searching for the <UL> element with the proper HTML ID.
-    Result: jQuery(ul#economy_class)
+  B)
+    - Select the entire seating chart
+      Result: jQuery(div#seating_chart)
 
-D)
-  - Select all of the 'a' seats - that is, all of the seats that have the 'a' class.
-    Result: jQuery(li.premium, li.premium, li.a, li.a, li.a, li.a)
+  C)
+    - Select the entire Economy Class by searching for the <UL> element with the proper HTML ID.
+      Result: jQuery(ul#economy_class)
 
-E)
-  - Select all the "b" and "c" seats at the same time using a compound selector
-    Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.b, li.c, li.b, li.c, li.b, li.c, li.b, li.c)
+  D)
+    - Select all of the 'a' seats - that is, all of the seats that have the 'a' class.
+      Result: jQuery(li.premium, li.premium, li.a, li.a, li.a, li.a)
 
-F)
-  - Select all li tags that are children of a ul tag
-    Result: jQuery(li#row_1, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_2, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_3, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_4, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_5, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_6, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f)
+  E)
+    - Select all the "b" and "c" seats at the same time using a compound selector
+      Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.b, li.c, li.b, li.c, li.b, li.c, li.b, li.c)
 
-G)
-  - Select all the rows and seats in first class, everything with an <LI>.
-    Result: jQuery(li#row_1, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_2, li.premium, li.premium, li.aisle, li.premium,  li.premium)
+  F)
+    - Select all li tags that are children of a ul tag
+      Result: jQuery(li#row_1, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_2, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_3, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_4, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_5, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li#row_6, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f)
 
-H)
-  - Select all of the <LI> tags that are either seats or aisles (but not the rows) in first_class using a single selector. Your selector will have multiple levels in the DOM hierarchy.
-    Result: jQuery(li.premium, li.premium, li.aisle, li.premium, li.premium, li.premium, li.premium, li.aisle, li.premium, li.premium)
+  G)
+    - Select all the rows and seats in first class, everything with an <LI>.
+      Result: jQuery(li#row_1, li.premium, li.premium, li.aisle, li.premium, li.premium, li#row_2, li.premium, li.premium, li.aisle, li.premium,  li.premium)
 
-I)
-  - Select all the seats and aisles on the plane with no other rows or elements.
-    Result: jQuery(li.premium, li.premium, li.aisle, li.premium, li.premium, li.premium, li.premium, li.aisle, li.premium, li.premium, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f)
+  H)
+    - Select all of the <LI> tags that are either seats or aisles (but not the rows) in first_class using a single selector. Your selector will have multiple levels in the DOM hierarchy.
+      Result: jQuery(li.premium, li.premium, li.aisle, li.premium, li.premium, li.premium, li.premium, li.aisle, li.premium, li.premium)
 
-J)
-  - Select the first row on the plane without using any DOM ID's. Instead, rely on the ':first' pseudo-class.
-    Result: jQuery(li#row_1)
+  I)
+    - Select all the seats and aisles on the plane with no other rows or elements.
+      Result: jQuery(li.premium, li.premium, li.aisle, li.premium, li.premium, li.premium, li.premium, li.aisle, li.premium, li.premium, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f, li.a, li.b, li.c, li.aisle, li.d, li.e, li.f)
 
-K)
-  - Select the last seat on the plane using only the :last pseudo-class.
-    Result: jQuery(li.f)
+  J)
+    - Select the first row on the plane without using any DOM ID's. Instead, rely on the ':first' pseudo-class.
+      Result: jQuery(li#row_1)
 
-L)
-  - Use the direct descendant selector to find the <UL>s with id = first_class and id = economy_class. Use a single selector.
-    Result: jQuery(ul#first_class, ul#economy_class)
+  K)
+    - Select the last seat on the plane using only the :last pseudo-class.
+      Result: jQuery(li.f)
 
-M)
-  - Select all the rows in the economy class by selecting the direct descendants from ul#economy_class.
-    Result: jQuery(li#row_3, li#row_4, li#row_5, li#row_6)
+  L)
+    - Use the direct descendant selector to find the <UL>s with id = first_class and id = economy_class. Use a single selector.
+      Result: jQuery(ul#first_class, ul#economy_class)
 
-N)
-  - Find the first row of first and economy class without relying on the row's ID. Instead use the direct descendant marker and the :first pseudo-class. You'll need two selectors.
-    Result: jQuery(li#row_1, li#row_3)
+  M)
+    - Select all the rows in the economy class by selecting the direct descendants from ul#economy_class.
+      Result: jQuery(li#row_3, li#row_4, li#row_5, li#row_6)
 
-O)
-  - Find all the window seats (a & d in first class, and a & f in economy) using any tools necessary.
-    Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.a, li.f, li.a, li.f, li.a, li.f, li.a, li.f)
+  N)
+    - Find the first row of first and economy class without relying on the row's ID. Instead use the direct descendant marker and the :first pseudo-class. You'll need two selectors.
+      Result: jQuery(li#row_1, li#row_3)
 
-P)
-  - Find all of the aisle seats (meaning, those LI elements immediately before and after the LI.aisle) using any tools necessary.
-    Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.c, li.d, li.c, li.d, li.c, li.d, li.c, li.d)
+  O)
+    - Find all the window seats (a & d in first class, and a & f in economy) using any tools necessary.
+      Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.a, li.f, li.a, li.f, li.a, li.f, li.a, li.f)
 
+  P)
+    - Find all of the aisle seats (meaning, those LI elements immediately before and after the LI.aisle) using any tools necessary.
+      Result: jQuery(li.premium, li.premium, li.premium, li.premium, li.c, li.d, li.c, li.d, li.c, li.d, li.c, li.d)
+
+==================================================================================
+Utilities
+  Q)
+    - Use $.each do loop through all of the seats and log each HTML element out to the console
+      Result:
+        <li class="premium a">
+        <li class="premium b">
+        <li class="premium c">
+        <li class="premium d">
+        <li class="premium a">
+        <li class="premium b">
+        <li class="premium c">
+        <li class="premium d">
+        <li class="a">
+        <li class="b">
+        <li class="c">
+        <li class="d">
+        <li class="e">
+        <li class="f">
+        <li class="a">
+        <li class="b">
+        <li class="c">
+        <li class="d">
+        <li class="e">
+        <li class="f">
+        <li class="a">
+        <li class="b">
+        <li class="c">
+        <li class="d">
+        <li class="e">
+        <li class="f">
+        <li class="a">
+        <li class="b">
+        <li class="c">
+        <li class="d">
+        <li class="e">
+        <li class="f">
+
+  R)
+    - Count all of the seats and put the total value on the seating_chart element using .attr() as a variable called "number_of_seats".
+      Result: <div id="seating_chart" number_of_seats=XXXX>
+
+=======================================================================================
 

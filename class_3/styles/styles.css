@@ -1,0 +1,21 @@
+ul {
+  width: 500px;
+}
+ul li ul li:nth-child(odd) {
+  background-color: #CCC;
+}
+ul li ul li:nth-child(even) {
+  background-color: #FFF;
+}
+
+li.highlight {
+  background-color: lightyellow !important;
+}
+
+div.help_text {
+  float: right;
+}
+
+div.header {
+  width: 575px;
+}

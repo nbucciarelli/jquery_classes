@@ -1,0 +1,42 @@
+A)
+  - Load jQuery from Google
+  - Create a new javascript file called "application.js" inside the javascripts folder
+  - Load that file in your HTML header below your jQuery load
+  - Use your .ready event on the document to start coding your lab
+B)
+  - Use your jQuery selector on your submit button, disable it (Class 2)
+    Result: Submit button will be grayed out.
+    Hint: Set the disabled attribute to true
+C)
+  - Use your jQuery selector on the name input field, use the blur event on it. If the value of the input field is not blank, enable the button again.
+    Result: When you put text in the input field, the submit button will be enabled again
+D)
+  - Use your jQuery selector to select each of the seats (Should be 1 selector!). Register a click event on these seats and have an alert window pop up saying whatever you would like it to say.
+    Result: Whenever you click a seat, an alert window pops up
+E)
+  - First Class, Row 1 is missing a seat! Put a new LI in the first row of First Class. The new LI element should have classes: "premium" and "d"
+    Result: An additional seat should be added to the first row of first class with text of D
+F)
+  - First Class, Row 2 is missing a seat! Put a new LI in the second row of First Class. The new LI element should have classes: "premium" and "a"
+    Result: An additional seat should be added to the second row of first class with text of A
+G)
+  - Economy Class, Row 3 - 6 are missing seats! Put a new LI all of the rows of economy class. The new LI element should have a single class of "f"
+    Result: An additional seat should be added to the each row of economy class with text of F
+H)
+  - Adding on to B, when you click a row, add the highlight CSS class to it.
+    Result: When clicking rows, they will turn yellow.
+I)
+  - Adding on to B, when you click a row, before you add a highlight CSS class to it, remove the highlight classes from all other list items.
+    Result: When clicking additional rows, only ONE of them will highlight
+J)
+  - Add a mouseenter event on the seats. In that event, you will replace the HTML inside of the div#help_text with the seat you currently have highlighted. It should say something along the lines of "You currently have seat D highlighted"
+    Result: When you hover over a seat, help text will show up with the seat you have highlighted
+    Hint: $(selector).text() will give you the text value of the seat
+K)
+  - Add a mouseleave event on the seats. In that event you will clear out the HTML inside of div#help_text.
+    Result: When your mouse leaves all of the seats, the div#help_text will clear out.
+L)
+  - Because we are dynamically adding LI's to some of the rows, we need to change that .click event into a .live event.
+    Result: When you click the D's for first class, and F's for economy class, the click event will still fire.
+
+

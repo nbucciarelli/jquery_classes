@@ -1,0 +1,49 @@
+A)
+  1 - Load jQuery from Google
+  2 - Create a new javascript file called "application.js" inside the javascripts folder
+  3 - Load that file in your HTML header below your jQuery load
+  4 - Use your .ready event on the document to start coding your lab
+
+B)
+  1 - Use a click event on the ask-a-question div
+  2 - When it's clicked, perform a slideToggle on the ask-a-question-form-container
+  3 - Toggle the visibility for both the up-carat and down-carat images
+    Result: When clicking the "Ask us a question!" it will slide up and down showing a form
+
+C)
+  1 - Use the mouse enter event on the information image to fade in the information_text div
+    Result: When hovering your mouse over the information button, some help text will fade in
+
+D)
+  1 - Use the mouse leave event on the information image to fade out the information_text div
+    Result: When your mouse leaves the information button, some help text will fade out
+
+E)
+  - On a click event for the left button, animate the blue box to move left 50 pixels.
+    Result: When you click the left button, the box will move left
+
+F)
+  - On a click event for the right button, animate the blue box to move right 50 pixels.
+    Result: When you click the right button, the box will move right
+
+G)
+  - Use animate on the red_box to increase the width to 500px with a duration of 2 seconds
+    Result: When you load your page, the red box will increase in width
+
+H)
+  - Building off of G, add a complete handler to your red_box animation to decrease it's width back to 100
+    Result: When you load your page, the red box will increase in width, then decrease in width
+
+I)
+  - Building off of H/I, add height to the list of attributes that are handled on both instances. Make the height animate to 500px
+    Result: The height and width of the box will increase and decrease in tandem.
+
+J)
+  - Building off of the others, create a step handler to console.log $(this) elements with and heigth.
+    Result: Every step, output in the console will look similar to this: "Width: 100.9 Height: 150". You will see a lot of them
+
+J)
+  - Be creative! Create something yourself using everything you know! If you need help with the HTML and CSS, feel free to consult me!
+
+
+

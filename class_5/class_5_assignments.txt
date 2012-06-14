@@ -1,0 +1,80 @@
+The following routes are given to you from the server:
+GET    /addresses
+POST   /addresses
+GET    /addresses/new
+GET    /addresses/:id/edit
+GET    /addresses/:id
+PUT    /addresses/:id
+DELETE /addresses/:id
+
+You will use the following, from the list above, in your lab:
+GET    /addresses
+POST   /addresses
+DELETE /addresses/:id
+
+And the challenge:
+GET    /addresses/:id
+PUT    /addresses/:id
+
+A)
+  1) Register a click event on the Filter button
+  In the callback for the event, you will do the following:
+  2) Clear out the HTML for the tbody with a class of address_list
+  3) Show the image with a class of address_loader
+  4) Perform an ajax call with a type of get, a url of /addresses, a dataType of json, a success callback and data that is passed in.
+  5) For the data that is passed in: a json object with a q node with a value of the filter input box
+  6) The success callback will look through the data (array of addresses)
+     Hide the address_loader image
+     For each address, you will append a table row object to the .addresses_list with all of the information in it.
+
+  Hints:
+    - Look at the table that I gave you in the browser to determine what order the data will be added in
+
+  End result table row will look something like this:
+    <tr class="address"><td>First Name</td><td>Last Name</td><td>Email</td><td>Address</td><td>City</td><td>State</td><td>Zip</td></tr>
+
+B)
+  1) Adding on to the table row from A, add a table cell that contains a span with a class of icon and delete at the end of the row. You will also add and attribute to this table cell called "address_id". The value of that attribute will be determined by the address JSON object that is returned to you from the server.
+  2) Register a click event on the delete span
+  In the callback for the click event, you will do the following:
+  3) Show the address_loader
+  4) Create an ajax call with a type of delete, url of /addresses/:id, dataType of json, and a success callback.
+  The success callback will do the following:
+    - Hide the address_loader image
+    - Use an animation from your toolkit to remove the table row it belongs to
+
+  Hints:
+    - This remove cell will look like this:
+      <td><span class="icon delete" address_id="189"></span></td>
+    - The url /addresses/:id. :id will be replaced with the ID you grab from the address_id attr on the delete image
+
+C)
+  1) Register a click event on the .submit_new_address button
+  In the callback for the click event, you will do the following:
+  2) Show the create_loader image
+  3) Hide the error_explanation div element
+  4) Clear out the HTML of the error_list div
+  5) Do an ajax call with a type of post, data passed in, url of '/addresses', dataType of 'json', a success callback, and error callback
+  6) The data passed in will be a JSON object with a node of address. Inside the address node will contain the following nodes: email, first_name, last_name, address, city, state, zip. You will grab all of the information from the form.
+  In the success callback you will do the following:
+  7) Hide the create_loeader
+  8) Set the values of all input objects to ''
+  9) Perform an animation from your toolkit to show (fadein, slidein, show, etc...) the success div. It will have a callback
+  In the animation callback
+  10) Perform an animation from your toolkit to hide (fadeout, slideout, hide, etc...) the success div.
+  In the error callback
+  11) Show the error_explanation
+  12) The following code will loop through the errors returned from the server and add them to the error_lit. If you want to try to figure it out, please do so and ignore the following code! Otherwise, I will give you the following code due to time constraints.
+      error_response = JSON.parse(xhr.responseText)
+      for(var key in error_response.errors){
+        for(var error in error_response.errors[key]) {
+          $('.error_list').append("<li>" + key + " " + error_response.errors[key][error])
+        }
+      }
+  13) Hide the create_loader
+
+D) Challenge!
+  1) When you click an object from the list, it will do an ajax call do the server to receive the address.
+  2) In the success call, you will populate the form with the data from the address that is returned from the server
+  3) Change the button to be an "Update" button instead of a create button
+  4) Upon clicking, it will update the address from the list with an ajax with type of put, and clear the input values.

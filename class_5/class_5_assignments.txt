@@ -19,7 +19,7 @@ PUT    /addresses/:id
 A)
   1) Register a click event on the Filter button
   In the callback for the event, you will do the following:
-  2) Clear out the HTML for the tbody with a class of address_list
+  2) Clear out the HTML for the tbody with a class of addresses_list
   3) Show the image with a class of address_loader
   4) Perform an ajax call with a type of get, a url of /addresses, a dataType of json, a success callback and data that is passed in.
   5) For the data that is passed in: a json object with a q node with a value of the filter input box

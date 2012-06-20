@@ -1,0 +1,102 @@
+Slide 1
+
+  Class 6
+    Plugins
+
+Slide 2
+  
+  What is a plugin?
+  
+  
+Slide 3
+  
+  Plugins we will go over
+    qTip
+    TableSorter
+    Chosen
+    
+Slide 4
+  
+  qTip
+    Stylish Tooltips
+  http://craigsworks.com/projects/qtip/    
+
+Slide 5
+  Using qTip
+
+  <script type="text/javascript" src="/projects/qtip/js/jquery.qtip-1.0.0.min.js"></script>  
+  
+  $(selector).qtip({ configuration_options })
+
+Slide 6
+  Configuring qTip
+    http://craigsworks.com/projects/qtip/docs/tutorials/  
+    
+    Positioning
+    Styling
+    Borders
+    Tips
+    Dynamic Content
+    Effects
+    Events
+    
+Slide 7
+  Configuring options qTip
+    http://craigsworks.com/projects/qtip/docs/reference/
+      
+    $(selector).qtip({
+       content: 'This is an example',
+       show: 'mouseover',
+       hide: 'mouseout'
+    })
+    
+    Lots, lots more
+    
+Slide 8
+  TableSorter
+    Multi Column Table Sorting
+  
+  http://tablesorter.com/docs/    
+    
+Slide 9
+  Using Tablesorter
+  
+  <script type="text/javascript" src="/path/to/jquery.tablesorter.js"></script>
+  
+  $(document).ready(function() {
+		$("#myTable").tablesorter({ configuration_options } ); }
+  );  
+  
+
+Slide 10
+  TableSorter: SortList
+  
+  $("#myTable").tablesorter({ sortList: [[0,0], [1,0]] } ); }
+  This will sort the first and second columns in Ascending Order
+
+  $("#myTable").tablesorter({ sortList: [[0,1], [1,1]] } ); }
+  This will sort the first and second columns in Descending Order
+  
+  http://tablesorter.com/docs/#Configuration
+  
+Slide 11
+  
+  Chosen
+    User Friendly Select Boxes
+  
+  http://harvesthq.github.com/chosen/  
+    
+Slide 12
+  
+  Using Chosen
+    
+  <script type="text/javascript" src="/path/to/chosen.js"></script>
+  
+  $(selector).chosen({ configuration_options });
+  
+Slide 13
+  
+  Chosen Configuration Options
+  
+  
+

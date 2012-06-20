@@ -10,10 +10,11 @@ Slide 2
   
 Slide 3
   
-  Plugins we will go over
+  Things we will go over
     qTip
     TableSorter
     Chosen
+    Creating your own plugin
     
 Slide 4
   
@@ -95,8 +96,13 @@ Slide 12
   $(selector).chosen({ configuration_options });
   
 Slide 13
-  
-  Chosen Configuration Options
-  
-  
 
+  Creating your own plugin
+
+  $.fn.extend({
+    myMethod: function() {
+      // Code goes here!
+    }    
+  })
+
+  The code in myMethod will be executed on the selected jQuery object

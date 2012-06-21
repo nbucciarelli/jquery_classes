@@ -1,0 +1,31 @@
+---- Make sure you are finished the AJAX lab before moving on. That is the most important ----
+
+A)
+  1 - Load jQuery from Google
+  2 - Create a new javascript file called "application.js" inside the javascripts folder
+  3 - Load that file in your HTML header below your jQuery load
+  4 - Use your .ready event on the document to start coding your lab
+  
+B)
+  1 - Download and include the qTip javascript file.
+  2 - Perform a qtip method on your information image.
+  3 - User some settings to make it say something useful
+  4 - Be creating, add some positioning and styling on your tool tip.
+  http://craigsworks.com/projects/qtip/docs/tutorials/
+
+B)
+  1 - Download and include the tablesorter javascript file.
+  2 - Perform your tablesorter method on your address_table
+  3 - Add an additional class to your address_table
+  4 - Include one of the themes that is included in your tablesorter zip file.
+    It should include a style.css file, asc.gif, bg.gif, and a desc.gif
+
+C)
+  1 - Download and include the chosen javascript file, CSS file, and chosen-sprite.png.
+    https://github.com/harvesthq/chosen/raw/master/chosen/chosen-sprite.png
+    https://raw.github.com/harvesthq/chosen/master/chosen/chosen.css
+    https://raw.github.com/harvesthq/chosen/master/chosen/chosen.jquery.js
+  2 - Perform your chosen method on your football_team select box
+
+D)
+  1 - Create your own plugin to...

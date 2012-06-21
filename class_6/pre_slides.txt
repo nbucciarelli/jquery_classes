@@ -92,8 +92,11 @@ Slide 12
   Using Chosen
     
   <script type="text/javascript" src="/path/to/chosen.js"></script>
+  <link rel='stylesheet' type='text/css' href='path/to/chosen.css' />
+  <!-- You need to include both the javascript and CSS! -->
   
   $(selector).chosen({ configuration_options });
+  
   
 Slide 13
 

@@ -1,0 +1,62 @@
+A)
+<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="javascripts/application.js"></script>
+
+  - Download jquery UI. http://jqueryui.com/
+  - Unzip it and look through the folders.
+  - Include your jquery theme folder in the resources folder. 
+  - From that, include your jquery UI css file (jquery-ui-1.8.21.custom.css)
+  - Include your jquery js file in the javascripts folder. (From google or local, your choice)
+  - Include your jquery ui js file in the javascripts folder.
+  - Create an application.js file in your javascripts folder. All of your code will go there.
+
+A)
+  - Create a dialog on the information_dialog div.
+  - Make this div model
+  - Make sure it does not auto open
+  - Give it a title
+
+B)
+  - When you click the information image, open the information dialog
+  
+C)
+  - make all inputs with a class of datepicker have a jquery ui datepicker on it
+  - make the alternate format month-day-year
+  - constrain the input
+  - use the on close event
+    - when the user enters a date, if it's a date in the future, log it in the console telling the user they chose a future date
+  - Add a read only attribute to the datepicker inputs and set it to true
+  - Add a read only attribute to the hidden datepicker field (I know it's not hidden!)
+
+D)
+  - When the create datepicker button is clicked, move all of the above code inside that click, so when you click the button, the datepicker is created on the inputs
+  
+E)
+  - When the destroy datepicker button is clicked, destroy the datepicker from the datepicker input
+  - Remove the readonly attribute from the datepicker input
+  - Remove the readonly attribute from the hidden datepicker input
+  
+F)
+  - Turn the movies class div into a jquery ui accordion
+  - Make the accordion collapsible
+  - Use the change event to log "You changed movies" when they select another movie from the accordion
+
+G)
+  - Turn the tabs div into a jquery ui tabs
+  - Use the select event to log out in the console "You changed tabs" when you select a new tab
+
+H)
+  - Create an array of strings (Try to use the same topic, I used movie titles)
+  - Turn the movie autocomplete input into a jquery ui autocomplete
+  - Let it have a minimum length of 3 characters
+  - Let your source be your array of strings
+    - When you type things in from your array, it will autocomplete when you type things in the box
+
+I)
+  - Create an array of JSON hashes using the lable/value nodes
+  - The label node will be your standard text, and the value node will be lowercased and underscored
+    - Ex: {label: "Finding Nemo", value: "finding_name"}
+  - Make it have a minimum length of 3
+  - The source should be the above JSON hash
+

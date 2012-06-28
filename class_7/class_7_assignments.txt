@@ -59,4 +59,15 @@ I)
     - Ex: {label: "Finding Nemo", value: "finding_name"}
   - Make it have a minimum length of 3
   - The source should be the above JSON hash
+  
+J)
+  - Change the theme of your jQuery UI!
+  
+K) 
+  - Create a jQuery UI progress bar
+  - You will do 100% of the work on this one (User the jQuery UI website!)
+  - Create your HTML div
+  - Create your progress bar
+  - Use the javascript set interval method to increase the value of the jquery ui progress bar: http://www.w3schools.com/js/js_timing.asp
+  
 

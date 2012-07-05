@@ -1,0 +1,32 @@
+A)
+  - Download jquery UI. http://jqueryui.com/
+  - Unzip it and look through the folders.
+  - Include your jquery theme folder in the resources folder. 
+  - From that, include your jquery UI css file (jquery-ui-1.8.21.custom.css)
+  - Include your jquery js file in the javascripts folder. (From google or local, your choice)
+  - Include your jquery ui js file in the javascripts folder.
+  - Create an application.js file in your javascripts folder. All of your code will go there.
+
+B)
+  - Make the first draggable box draggable
+  - Append it to the body
+
+C)
+  - Make the first draggable box draggable 
+  - Make it draggable only within the orange background
+  - Append it to the orange background
+
+D)
+  - Make the blue box droppable with a unique scope
+  - Make the third_draggable box draggable with the same scope as the droppable blue box
+  - Give the blue box a tolerance of touch
+  - Give the droppable element a drop event handler
+    * In that event handler, add a class of highlight to the blue box, and change the html to "Dropped!"
+  - Give the third draggable box a drag event handler
+    * In the event handler, remove the class of highlight from the blue box, and change the HTML back to ""Drop it in here, just touching.""
+    
+E)
+  - Make the UL of dates sortable
+  - For each LI element, add the ui-state-default class to it in index.html
+  - For each LI element, add an icon image of ui-icon-arrowthick-2-n-s before the text of the LI.
+    * Either that, or choose one of your own: http://jqueryui.com/themeroller/

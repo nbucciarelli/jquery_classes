@@ -1,0 +1,35 @@
+.orange_background {
+  width: 400px;
+  height: 500px;
+  background-color: orange;
+}
+
+.fourth_draggable, .third_draggable, .second_draggable, .first_draggable {
+  padding: 10px;
+  text-align: center;
+  background-color: gray;
+  width: 140px;
+  color: black;
+}
+
+.red_box, .blue_box {
+  color: white;
+  width: 200px;
+  height: 200px;
+  padding: 100px;
+  background-color: blue;
+}
+
+.red_box {
+  background-color: red;
+  color: black;
+}
+
+.highlight {
+  background-color: #FF6F60 !important;
+}
+
+ul.dates_sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+ul.dates_sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+ul.dates_sortable li span { position: absolute; margin-left: -1.3em; }
+

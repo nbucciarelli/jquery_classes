@@ -1,0 +1,49 @@
+You will be creating a web site from scratch! Here is the starting point:
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Lab 9</title> 
+</head> 
+<body> 
+
+</body>
+</html>
+
+
+A)
+  - Create your index.html. The above code 
+  - Include your jquery mobile css, jquery javascript, jquery mobile javascript
+
+B)
+  - Create your first jquery mobile page.
+  - Create a footer for that page with 3 sections:
+    * Summary
+    * Movies/Cars/Websites (Or something you can create a list with!)
+    * Setup
+  - Create a header for the first page with a text of Summary
+  - Create content and put some nifty stuff in there
+
+C)
+  - Create 2 additional pages for both the list and the setup
+  - Give the pages corresponding ID's and have the links link to those pages
+
+D)
+  - Fill the list page with a list of information
+  - Go crazy..add some creative things to do!
+
+E)
+  - In the setup page add a link button for each of the ajax page transitions
+  - Give the links a class of change_transition
+  - Add an HTML attribute of "transition" with the corresponding transition as a string
+    ex: <a transition="pop">Pop</a>
+  - Create an application.js file in a newly created javascripts folder.
+  - Register a tap event on the change_transition link
+  - In the tap event:
+    * Grab the transition from the HTML attribute
+    * Set the mobile transition to that attribute and test it out by clicking other links!
+
+F)
+  - If you finish this early, create something of your own in jQuery mobile.
+
+
